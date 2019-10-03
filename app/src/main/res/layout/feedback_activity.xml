@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".feedback_Activity">
+
+    <include
+        android:id="@+id/app_bar2"
+        layout="@layout/app_bar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadoww"/>
+
+    <TextView
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center"
+    android:textColor="#000000"
+    android:textSize="22dp"
+    android:text="Add your feedback..."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editTextBackground"
+        android:hint="Write Feedback Here."
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:minLines="2"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+        android:gravity="top|left"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:id="@+id/feedback_submit"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/button_material"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        style="@style/SpinKitView.Small"
+        app:SpinKit_Color="#000000"
+        app:SpinKit_Style="FadingCircle"
+        android:id="@+id/number_progress_bar"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:id="@+id/feedback_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

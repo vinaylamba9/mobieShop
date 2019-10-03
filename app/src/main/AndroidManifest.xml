@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cr7.mobieshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sellxlogo"
+        android:label="sellX"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sign_in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register" />
+        <activity android:name=".category_class" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".upload_image" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".detailactivity" />
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".profile_class"/>
+        <activity android:name=".feedback_Activity"/>
+        <activity android:name=".my_adds_activity"/>
+        <activity android:name=".my_account"/>
+        <activity android:name=".edit_my_account"/>
+        <activity android:name=".buy_product"/>
+        <activity android:name=".NotificationList"/>
+
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyFirebaseInstaceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications_black_24dp" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+    </application>
+
+</manifest>

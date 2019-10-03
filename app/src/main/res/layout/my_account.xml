@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".my_account">
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/edit_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="14dp"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/ic_settings_black_24dp" />
+        <RelativeLayout
+            android:id="@+id/img_user"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_border_profile"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:id="@+id/user_picture"
+                android:src="@drawable/ic_person_white_24dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_user"
+            android:text="Vinay Kumar"
+            android:textSize="32sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/address_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_profile"
+            android:text="Hostel Location"
+            android:textSize="16sp"
+            android:textColor="#083849"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linlay1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_user"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center"
+            android:background="#4a9fc7"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                    android:inputType="numberDecimal"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seller Rating"
+                    android:textSize="13sp"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="#55e2e6"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADDS POSTED"
+                    android:textAllCaps="true"
+                    android:textSize="13sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/linlay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="#3797CF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="joey@sharenofood.com"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#E5E5E5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registration Number or UID"
+                        android:textColor="#3797CF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/user_regno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="11507651"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#E5E5E5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Created On"
+                        android:textColor="#3797CF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/user_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="27 October 2018"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#E5E5E5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textColor="#3797CF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/account_phoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="facebook.com/joeytrib"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#E5E5E5" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:layout_margin="2dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/titlee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumbnail"
+            android:paddingLeft="8dp"
+            android:text="Title"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:textColor="#4c4c4c"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlee"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Rs. 1499"
+            android:textColor="#005599"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/thumbnail"
+            android:layout_marginTop="10dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_options" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

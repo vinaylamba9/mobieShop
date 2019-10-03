@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".my_adds_activity">
+    <include
+        android:id="@+id/app_bar2"
+        layout="@layout/app_barr"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadoww"/>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        style="@style/SpinKitView.Small"
+        app:SpinKit_Color="#000000"
+        app:SpinKit_Style="FadingCircle"
+        android:id="@+id/pb"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_adds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

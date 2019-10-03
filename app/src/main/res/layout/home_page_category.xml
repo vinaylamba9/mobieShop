@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dlMain"
+    tools:context=".category_class">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#e6e5e5"
+    android:orientation="vertical"
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_home"></include>
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <android.support.v7.widget.RecyclerView
+           android:layout_marginTop="5dp"
+           android:layout_width="wrap_content"
+           android:id="@+id/category_recyclerview"
+           android:layout_height="wrap_content">
+
+       </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="157dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#000000"
+            android:elevation="50dp"
+            android:layout_margin="1dp"
+            android:tooltipText="POST ADD"
+            android:src="@drawable/ic_add_black_24dp"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottom_app_bar"
+            app:maxImageSize="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_anchor="@id/bottom_app_bar"
+            android:background="@drawable/shadow"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadoww"/>
+
+        <android.support.design.bottomappbar.BottomAppBar
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    app:hideOnScroll="true"
+    android:id="@+id/bottom_app_bar"
+    android:outlineSpotShadowColor="#000"
+    android:elevation="15dp"
+    app:fabAlignmentMode="center"
+    android:backgroundTint="#fff"
+    android:layout_height="56dp">
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:src="@drawable/ic_home_black_24dp"
+        android:layout_width="36dp"
+        android:tooltipText="Home"
+        android:backgroundTint="#0000"
+        android:layout_height="36dp" />
+
+       <ImageButton
+           android:id="@+id/myadds_activity"
+           android:src="@drawable/ic_shopping_cart_black_24dp"
+           android:layout_width="36dp"
+           android:tooltipText="Cart"
+           android:layout_marginStart="50dp"
+           android:backgroundTint="#0000"
+           android:layout_height="36dp" />
+
+       <ImageButton
+           android:id="@+id/feedback_activity"
+           android:src="@drawable/ic_feedback_black_24dp"
+           android:backgroundTint="#0000"
+           android:layout_width="36dp"
+           android:tooltipText="Feedback"
+           android:layout_marginStart="120dp"
+           android:layout_height="36dp" />
+
+       <ImageButton
+           android:id="@+id/my_account_activity"
+           android:src="@drawable/ic_person_black_24dp"
+           android:layout_width="36dp"
+           android:tooltipText="Profile"
+           android:layout_marginStart="40dp"
+           android:backgroundTint="#0000"
+           android:layout_height="36dp" />
+
+   </LinearLayout>
+
+</android.support.design.bottomappbar.BottomAppBar>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
+</LinearLayout>
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="280dp"
+        android:layout_gravity="start"
+        android:layout_height="match_parent">
+        <include
+            android:visibility="visible"
+            android:id="@+id/llDrawerAdmin"
+            layout="@layout/navigation_drawer"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

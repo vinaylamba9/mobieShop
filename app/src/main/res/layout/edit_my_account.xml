@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".edit_my_account">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:src="@drawable/write"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp" />
+    <TextView
+        android:textColor="#146496"
+        android:text="Edit Name :"
+        android:textSize="20dp"
+        android:layout_width="350dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/edit_name"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="30dp"
+        android:focusedByDefault="false"
+        android:background="@color/editTextBackground"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:textColor="#146496"
+        android:text="Edit Email :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/edit_email"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:focusedByDefault="false"
+        android:layout_height="30dp"
+        android:background="@color/editTextBackground"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:textColor="#146496"
+        android:text="Edit Phone Number :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/edit_phoneno"
+        android:layout_width="350dp"
+        android:textColor="#000000"
+        android:focusedByDefault="false"
+        android:layout_gravity="center"
+        android:layout_height="30dp"
+        android:background="@color/editTextBackground"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:textColor="#146496"
+        android:text="Edit Address :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/edit_address"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:focusedByDefault="false"
+        android:layout_height="30dp"
+        android:background="@color/editTextBackground"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:id="@+id/edited_data_submit"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:background="@drawable/button_material"
+        android:fontFamily="sans-serif-condensed"/>
+
+</LinearLayout>

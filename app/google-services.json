@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "412695043947",
+    "firebase_url": "https://mobieshop-d6cdd.firebaseio.com",
+    "project_id": "mobieshop-d6cdd",
+    "storage_bucket": "mobieshop-d6cdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412695043947:android:3be4aa83d7149368",
+        "android_client_info": {
+          "package_name": "com.example.cr7.mobieshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412695043947-oeebp4eoug186v29b2bealodscki4spd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cr7.mobieshop",
+            "certificate_hash": "d050f0a42da815a9481fea89460aa0855395afe9"
+          }
+        },
+        {
+          "client_id": "412695043947-t0riudc7pn0a61gae0mt9t1s14rcrubk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1JOLtgxSeWEHWoc4AFUg70HCctOuZEwQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412695043947-t0riudc7pn0a61gae0mt9t1s14rcrubk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
